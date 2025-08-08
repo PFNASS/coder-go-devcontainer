@@ -27,5 +27,5 @@
         }
     },
     "onCreateCommand": "/on-create.sh",
-    "postCreateCommand": "go install github.com/charmbracelet/bubbletea && go install github.com/charmbracelet/huh && github.com/charmbracelet/lipgloss && go install github.com/spf13/cobra-cli@latest"
+    "postCreateCommand": "go install github.com/charmbracelet/bubbletea@latest && go install github.com/charmbracelet/huh@latest && github.com/charmbracelet/lipgloss@latest && go install github.com/spf13/cobra-cli@latest"
 }
