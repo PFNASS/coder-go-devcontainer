@@ -16,7 +16,7 @@
     },
     "mounts": [
         {
-            "source": "$HOME/Projects/GoProjects/pfctl",
+            "source": "home/jphill/Projects/GoProjects/pfctl",
             "target": "/workspaces/coder-go-devcontainer/pfctl",
             "type": "volume"
         }
