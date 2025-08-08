@@ -15,8 +15,12 @@ RUN useradd -m -s /bin/bash -G docker coder && \
 
 
 # Add our onCreateCommand script.
+RUN mkdir -p /home/coder/pfctl
 ADD on-create.sh /on-create.sh
+# ADD post-create.sh /post-create.sh
 RUN chmod 755 /on-create.sh
+# chmod 755 /post-create.sh
+
 USER coder
 
 ENTRYPOINT ["bash"]
