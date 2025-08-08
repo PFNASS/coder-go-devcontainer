@@ -1,0 +1,31 @@
+{
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+                "settings": {},
+                "extensions": [
+			              "streetsidesoftware.code-spell-checker",
+                    "danields761.dracula-theme-from-intellij-pythoned",
+                    "redhat.vscode-yaml",
+                    "golang.go",
+                    "NeonXP.gotools"
+                ]
+         }
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:1": {
+            "version": "latest",
+	        "moby": false
+        },
+        "ghcr.io/devcontainers/features/git:1": {
+            "version": "latest"
+        },
+        "ghcr.io/devcontainers/features/go:1": {
+            "version": "latest"
+        }
+    },
+    "onCreateCommand": "/on-create.sh",
+    "postCreateCommand": "go install github.com/charmbracelet/bubbletea && go install github.com/charmbracelet/huh && github.com/charmbracelet/lipgloss && go install github.com/spf13/cobra-cli@latest"
+}
