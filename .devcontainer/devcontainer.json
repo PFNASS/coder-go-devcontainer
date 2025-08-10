@@ -16,9 +16,14 @@
     },
     "mounts": [
         {
-            "source": "home/jphill/Projects/GoProjects/pfctl",
+            "source": "/home/jphill/Projects/GoProjects/pfctl",
             "target": "/workspaces/coder-go-devcontainer/pfctl",
-            "type": "volume"
+            "type": "bind"
+        },
+        {
+            "source": "/home/jphill/.pfctl",
+            "target": "/workspaces/coder-go-devcontainer/.pfctl",
+            "type": "bind"
         }
     ],
     "features": {
